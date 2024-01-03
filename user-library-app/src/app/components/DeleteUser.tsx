@@ -23,8 +23,6 @@ const DeleteUser: React.FC<{ user: IUser }> = ({ user }) => {
   const dispatch = useDispatch();
 
   const handleDelete = () => {
-    console.log("hi");
-
     dispatch(deleteUser(user.id));
     onClose();
   };
@@ -50,7 +48,6 @@ const DeleteUser: React.FC<{ user: IUser }> = ({ user }) => {
             <AlertDialogBody>
               Are you sure? You can't undo this action afterwards.
             </AlertDialogBody>
-
             <AlertDialogFooter display={"flex"} justifyContent={"center"}>
               <Button ref={cancelRef} onClick={onClose}>
                 Cancel
