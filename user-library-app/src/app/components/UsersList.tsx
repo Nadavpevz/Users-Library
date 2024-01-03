@@ -31,7 +31,7 @@ const UsersList = () => {
           );
         })
         .map((user) => {
-          return <User user={user} />;
+          return <User user={user} key={user.id} />;
         })}
     </Flex>
   );
