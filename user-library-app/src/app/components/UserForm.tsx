@@ -131,15 +131,14 @@ const UserForm: React.FC<{
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Flex flexDir={"column"} alignItems="center" p="5">
-          <Flex>
+        <Flex flexDir={"column"} alignItems="center" p="5" gap={2}>
+          <Flex gap={5}>
             <CustomFormControl
               errors={errors}
               register={register}
               fieldName="title"
               placeholder="Enter title"
             />
-            <Box w="5" />
             <CustomFormControl
               errors={errors}
               register={register}
@@ -165,14 +164,13 @@ const UserForm: React.FC<{
             fieldName="city"
             placeholder="Enter city"
           />
-          <Flex>
+          <Flex gap={5}>
             <CustomFormControl
               errors={errors}
               register={register}
               fieldName="streetName"
               placeholder="Enter street name"
             />
-            <Box w="5" />
             <CustomFormControl
               errors={errors}
               register={register}
@@ -180,7 +178,7 @@ const UserForm: React.FC<{
               placeholder="Enter street number"
             />
           </Flex>
-          <Box h="5"></Box>
+          <Box h="5" />
           <Flex>
             <Button colorScheme="blue" mr={3} onClick={onClose}>
               Close

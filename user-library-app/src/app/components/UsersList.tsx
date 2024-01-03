@@ -16,7 +16,7 @@ const UsersList = () => {
   const filters = useAppSelector((state) => state.filters);
 
   return (
-    <Flex alignItems={"center"} flexDir={"column"} p="10">
+    <Flex p="10" flexWrap={"wrap"} gap={10} justifyContent={"center"}>
       {users
         .filter((user) => {
           const fullName =
@@ -31,12 +31,7 @@ const UsersList = () => {
           );
         })
         .map((user) => {
-          return (
-            <React.Fragment key={user.id}>
-              <User user={user} />
-              <Box h={"1em"} />
-            </React.Fragment>
-          );
+          return <User user={user} />;
         })}
     </Flex>
   );

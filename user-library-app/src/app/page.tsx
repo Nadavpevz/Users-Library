@@ -14,17 +14,17 @@ export default function Home() {
             justifyContent={"center"}
             flexDir={"column"}
             alignItems={"center"}
+            gap={5}
           >
-            <Box h="10" />
+            <Box h="3" />
             <AddUser />
-            <Box h="10" />
-            <Flex justifyContent={"space-between"} w="100%" p={5}>
+            <Flex justifyContent={"space-between"} w="100%" p={5} gap={5}>
               <FilterBy filterParameter="email" />
-              <Box w="10" />
+
               <FilterBy filterParameter="id" />
-              <Box w="10" />
+
               <FilterBy filterParameter="name" />
-              <Box w="10" />
+
               <FilterBy filterParameter="location" />
             </Flex>
             <UsersList />
