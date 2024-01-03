@@ -3,16 +3,11 @@ import React from "react";
 import { IUser } from "../types";
 import {
   Box,
-  ButtonGroup,
   Button,
-  Heading,
-  Flex,
   FormControl,
-  GridItem,
-  FormLabel,
+  Flex,
   Input,
-  Grid,
-  Select,
+  FormLabel,
   FormErrorMessage,
 } from "@chakra-ui/react";
 import {

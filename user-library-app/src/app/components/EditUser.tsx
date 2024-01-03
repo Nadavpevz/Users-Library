@@ -5,12 +5,10 @@ import {
   ModalOverlay,
   ModalContent,
   ModalHeader,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
   useDisclosure,
   IconButton,
-  Button,
 } from "@chakra-ui/react";
 import { EditIcon } from "@chakra-ui/icons";
 import { IUser } from "../types";

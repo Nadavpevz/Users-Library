@@ -1,8 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { IUser } from "../types";
+import React, { useEffect } from "react";
 import User from "./User";
-import { getUsers } from "../data";
 import { Box, Flex } from "@chakra-ui/react";
 import { useAppSelector } from "@/lib/hooks";
 import { useDispatch } from "react-redux";

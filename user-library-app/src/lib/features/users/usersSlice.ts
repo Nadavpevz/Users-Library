@@ -1,5 +1,5 @@
 import { getUsers } from "@/app/data";
-import { FilterParameterOptions, IUser } from "@/app/types";
+import { IUser } from "@/app/types";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 

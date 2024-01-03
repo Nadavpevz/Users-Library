@@ -1,4 +1,4 @@
-import { FilterParameterOptions, IUser } from "@/app/types";
+import { FilterParameterOptions } from "@/app/types";
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 export interface filtersState {
