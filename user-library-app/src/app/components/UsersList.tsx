@@ -26,8 +26,8 @@ const UsersList = () => {
           return (
             user.email.includes(filters.email) &&
             user.id.includes(filters.id) &&
-            fullName.includes(filters.name) &&
-            fullLocation.includes(filters.location)
+            fullName.includes(filters.name.toLocaleLowerCase()) &&
+            fullLocation.includes(filters.location.toLocaleLowerCase())
           );
         })
         .map((user) => {
